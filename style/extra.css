@@ -1,0 +1,44 @@
+/* Make tables wider */
+.md-typeset table {
+    width: 100%; /* Take up the full width of the container */
+    min-width: 100%; /* Ensure it doesn't shrink too much */
+    border-collapse: collapse; /* Collapse borders for a cleaner look */
+  }
+  
+  /* Add padding to table cells */
+  .md-typeset td,
+  .md-typeset th {
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    border: 1px solid #ddd; /* Add a light border */
+  }
+  
+  /* Style the table header */
+  .md-typeset th {
+    background-color: #f0f0f0; /* Light gray background for headers */
+    font-weight: bold; /* Make header text bold */
+    text-align: left; /* Align header text to the left */
+  }
+  
+  /* Add hover effect to table rows */
+  .md-typeset tbody tr:hover {
+    background-color: #f8f8f8; /* Slightly darker background on hover */
+  }
+  
+  /* Improve the look of code inside tables */
+  .md-typeset td code {
+    background-color: #f5f5f5; /* Light gray background for code */
+    padding: 0.2rem 0.4rem; /* Add some padding */
+    border-radius: 3px; /* Rounded corners */
+    font-size: 0.9em; /* Slightly smaller font size */
+  }
+  
+
+/* Change the header background color */
+.md-header {
+  background-color: #2c4d6d; /* Indigo (or your desired color) */
+}
+
+/* Change the header text color */
+.md-header__title {
+  color: white; /* White (or your desired color) */
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Automação: Gestão de Ofensores - TrackFlow Documentação Dashboards e Automações</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../style/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Automa\u00e7\u00e3o: Gest\u00e3o de Ofensores";
+        var mkdocs_page_input_path = "pcp\\automacoes\\ofensores.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../..">
+          <img src="../../../images/logo.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Início</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Para PCP</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../">Introdução</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../dashboards/">Dashboards</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../">Automações</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">TrackFlow Documentação Dashboards e Automações</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Automação: Gestão de Ofensores</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="automacao-gestao-de-ofensores">Automação: Gestão de Ofensores</h1>
+<p>Esta automação é responsável por gerenciar o processo de identificação, justificativa e acompanhamento dos "Ofensores" no setor PCP.</p>
+<h2 id="funcionamento">Funcionamento</h2>
+<ol>
+<li><strong>Notificação Semanal:</strong> Toda segunda-feira de manhã, o programador recebe uma notificação via TrackFlow alertando sobre a necessidade de justificar as ocorrências de ofensores da semana anterior.</li>
+<li><strong>Prazo para Justificativa:</strong> O programador tem até as 12:00 da mesma segunda-feira para acessar o sistema e fornecer as justificativas para cada ocorrência de ofensor.</li>
+<li><strong>Salvamento dos Dados:</strong> Após as 12:00, o sistema salva automaticamente as justificativas fornecidas.</li>
+<li><strong>Base para Dashboards e Automações:</strong> As justificativas salvas servem como base para a atualização do dashboard "Ofensores" e para outras automações relacionadas.</li>
+</ol>
+<h2 id="beneficios">Benefícios</h2>
+<ul>
+<li><strong>Organização:</strong> Garante que as justificativas sejam fornecidas de forma organizada e dentro de um prazo definido.</li>
+<li><strong>Consistência:</strong> Padroniza o processo de justificativa, garantindo a consistência dos dados.</li>
+<li><strong>Agilidade:</strong> Agiliza o processo de atualização do dashboard e de outras automações.</li>
+<li><strong>Rastreabilidade:</strong> Permite rastrear as justificativas e os responsáveis por cada ocorrência.</li>
+</ul>
+<h2 id="como-interagir">Como Interagir</h2>
+<ul>
+<li><strong>Notificação:</strong> O programador receberá uma notificação no TrackFlow.</li>
+<li><strong>Justificativa:</strong> O programador deve acessar o sistema e preencher as justificativas na tela de ofensores.</li>
+<li><strong>Prazo:</strong> O prazo para preenchimento é até as 12:00 da segunda-feira.</li>
+</ul>
+<h2 id="observacoes">Observações</h2>
+<ul>
+<li>É crucial que o programador cumpra o prazo para garantir a integridade dos dados.</li>
+<li>As justificativas devem ser claras e objetivas, descrevendo a causa raiz da ocorrência.</li>
+<li>Não pode ter linhas sem justificativas. Todas devem ser preenchidas.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Versão</th>
+<th>Data</th>
+<th>Autor</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>02/04/2025</td>
+<td>Eric Cangussu</td>
+<td>Versão inicial.</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

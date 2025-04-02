@@ -1,0 +1,40 @@
+site_name: TrackFlow Documentação Dashboards e Automações
+
+theme:
+  name: readthedocs
+  features:
+      - navigation.tabs # Show tabs for top-level navigation
+      - navigation.sections # Show sections in the navigation
+      - navigation.expand # Expand navigation sections by default
+      - navigation.top # Show a "Back to top" button
+      - content.code.copy # Add a copy button to code blocks
+      - content.code.annotate # Add annotations to code blocks
+      - content.action.edit # Add a button to edit the page
+      - content.action.view # Add a button to view the page
+      - content.action.print # Add a button to print the page
+      - search.suggest # Suggest search terms
+      - search.highlight # Highlight search terms
+      - search.share # Share search results
+  language: pt
+  logo: images/logo.png
+  font:
+    text: Roboto
+    code: Roboto Mono
+  pallete:
+    - scheme: default
+      primary: blue-grey
+      accent: indigo
+    - scheme: slate
+      primary: black
+      accent: black
+
+extra_css: 
+  - style/extra.css
+
+nav:
+  - Início: index.md
+  - Para PCP:
+    - Introdução: pcp/index.md
+    - Dashboards: pcp/dashboards/index.md
+    - Automações: pcp/automacoes/index.md
+
