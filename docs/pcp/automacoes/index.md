@@ -21,6 +21,8 @@ As automações do PCP podem ser divididas em dois tipos principais:
 ## Automações Disponíveis
 
 *   [Automações relacionadas a Ofensores](ofensores.md)
+*   [Automações relacionadas a Pendências de Fábrica](pendencias_fabrica.md)
+
 
 
 ## Como Usar as Automações

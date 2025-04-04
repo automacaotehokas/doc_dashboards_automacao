@@ -3,18 +3,18 @@ site_name: TrackFlow Documentação Dashboards e Automações
 theme:
   name: readthedocs
   features:
-      - navigation.tabs # Show tabs for top-level navigation
-      - navigation.sections # Show sections in the navigation
-      - navigation.expand # Expand navigation sections by default
-      - navigation.top # Show a "Back to top" button
-      - content.code.copy # Add a copy button to code blocks
-      - content.code.annotate # Add annotations to code blocks
-      - content.action.edit # Add a button to edit the page
-      - content.action.view # Add a button to view the page
-      - content.action.print # Add a button to print the page
-      - search.suggest # Suggest search terms
-      - search.highlight # Highlight search terms
-      - search.share # Share search results
+      - navigation.tabs 
+      - navigation.sections 
+      - navigation.expand 
+      - navigation.top 
+      - content.code.copy 
+      - content.code.annotate 
+      - content.action.edit 
+      - content.action.view 
+      - content.action.print
+      - search.suggest 
+      - search.highlight 
+      - search.share 
   language: pt
   logo: images/logo.png
   font:
