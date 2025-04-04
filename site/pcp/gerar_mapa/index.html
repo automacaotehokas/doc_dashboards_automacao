@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Gerar Mapa - TrackFlow Documentação Dashboards e Automações</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../style/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Gerar Mapa";
+        var mkdocs_page_input_path = "pcp\\gerar_mapa\\index.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../images/logo.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Início</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Para PCP</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../">Introdução</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboards/">Dashboards</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../automacoes/">Automações</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Gerar Mapa</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#conteudo">Conteúdo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#visao-geral">Visão Geral</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#funcionalidades">Funcionalidades</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#carregamento-automatico-de-dados">Carregamento Automático de Dados</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#salvamento-e-correcao">Salvamento e Correção</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sistema-de-avisos-visuais">Sistema de Avisos Visuais</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#importacao-de-dados">Importação de Dados</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#recursos-da-tabela">Recursos da Tabela</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#guia-de-uso">Guia de Uso</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#solucao-de-problemas">Solução de Problemas</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#problemas-na-importacao-de-dados">Problemas na Importação de Dados</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#linha-nao-pode-ser-salva">Linha não Pode Ser Salva</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">TrackFlow Documentação Dashboards e Automações</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Para PCP</li>
+      <li class="breadcrumb-item active">Gerar Mapa</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="mapa-de-producao">Mapa de Produção</h1>
+<p>Bem-vindo à documentação do Mapa de Produção do TrackFlow. Esta ferramenta foi desenvolvida para programar e acompanhar o cronograma de expedição dos produtos, permitindo uma visualização clara do planejamento de produção.</p>
+<h2 id="conteudo">Conteúdo</h2>
+<ul>
+<li><a href="#visão-geral">Visão Geral</a></li>
+<li><a href="#funcionalidades">Funcionalidades</a></li>
+<li><a href="#guia-de-uso">Guia de Uso</a></li>
+<li><a href="#solução-de-problemas">Solução de Problemas</a></li>
+</ul>
+<h2 id="visao-geral">Visão Geral</h2>
+<p>O Mapa de Produção é uma tabela interativa que permite aferir e gerenciar as datas de expedição dos itens em programação. Esta ferramenta é essencial para o planejamento semanal da produção e para garantir que os prazos sejam cumpridos adequadamente.</p>
+<h2 id="funcionalidades">Funcionalidades</h2>
+<h3 id="carregamento-automatico-de-dados">Carregamento Automático de Dados</h3>
+<p>O sistema carrega automaticamente os dados JSON atualizados semanalmente ao iniciar a tabela.</p>
+<h3 id="salvamento-e-correcao">Salvamento e Correção</h3>
+<ul>
+<li><strong>Salvamento Semanal</strong>: O mapa deve ser salvo às sextas-feiras</li>
+<li><strong>Correção de Mapa Anterior</strong>: Após o salvamento, o botão "Corrigir Mapa Anterior" é habilitado</li>
+<li>Esta função carrega os dados do último mapa salvo no banco</li>
+<li>Exemplo: Na semana 14 (S14), após salvar, o botão carregará os dados do mapa da S14 para correção</li>
+</ul>
+<h3 id="sistema-de-avisos-visuais">Sistema de Avisos Visuais</h3>
+<p>A coluna <strong>Dt Expedição</strong> possui dois indicadores visuais:</p>
+<ol>
+<li>
+<p><strong>Indicador <span style="color:red">Vermelho</span></strong>: </p>
+<ul>
+<li>Aparece para datas de expedição iguais ou anteriores à data atual.</li>
+<li>Impede o salvamento da linha</li>
+</ul>
+</li>
+<li>
+<p><strong>Indicador <span style="color:orange">Laranja</span></strong>:</p>
+<ul>
+<li>Aparece para datas de expedição maiores que a data do último mapa.</li>
+<li>Permite o salvamento, funcionando apenas como alerta</li>
+</ul>
+</li>
+<li>
+<p><strong>Há um parâmetro na toolbar que permite filtrar as linhas com o indicador que o usuário deseja.</strong></p>
+</li>
+</ol>
+<h3 id="importacao-de-dados">Importação de Dados</h3>
+<p>A tabela permite importar dados de arquivos Excel:</p>
+<ol>
+<li>
+<p><strong>O botão "Importar Dados" é habilitado na toolbar após o carregamento da tabela</strong></p>
+</li>
+<li>
+<p><strong>O arquivo Excel deve conter exatamente as seguintes colunas como está escrito:</strong></p>
+<ul>
+<li><strong>OP</strong></li>
+<li><strong>OV</strong></li>
+<li><strong>Dt Expedição</strong></li>
+<li><strong>Justificativa</strong></li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p><strong>Nota</strong>: O arquivo "excel_teste_random.xlsx" está disponível para download <a href="../assets/files/excel_teste_random.xlsx" style="color:blue;font-weight:bold;" download>aqui</a> como modelo para importação.</p>
+</blockquote>
+<h3 id="recursos-da-tabela">Recursos da Tabela</h3>
+<ol>
+<li><strong>Filtros Personalizáveis</strong></li>
+</ol>
+<h2 id="guia-de-uso">Guia de Uso</h2>
+<ol>
+<li>Na página inicial, clique no card <strong>Gerar Mapa</strong></li>
+<li>Aguarde o carregamento dos dados semanais</li>
+<li>Se necessário, utilize o botão <strong>Importar Dados</strong> para carregar informações de um arquivo Excel</li>
+<li>Ajuste as datas de expedição, observando os indicadores visuais</li>
+<li>Salve o mapa (preferencialmente às sextas-feiras)</li>
+<li>Para correções, utilize o botão <strong>Corrigir Mapa Anterior</strong></li>
+</ol>
+<h2 id="solucao-de-problemas">Solução de Problemas</h2>
+<h3 id="problemas-na-importacao-de-dados">Problemas na Importação de Dados</h3>
+<ul>
+<li>Verifique se o arquivo Excel contém todas as colunas necessárias: OP, OV, Dt Expedição e Justificativa</li>
+<li>Certifique-se de que o arquivo está no formato correto</li>
+</ul>
+<h3 id="linha-nao-pode-ser-salva">Linha não Pode Ser Salva</h3>
+<ul>
+<li>Verifique se há indicador vermelho na coluna de data de expedição</li>
+<li>Ajuste a data para um valor futuro (posterior à data atual)</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../automacoes/" class="btn btn-neutral float-left" title="Automações"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../automacoes/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

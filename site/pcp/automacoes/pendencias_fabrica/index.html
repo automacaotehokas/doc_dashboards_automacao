@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>⚙️ Automação: Pendências de Fábrica - TrackFlow Documentação Dashboards e Automações</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../style/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u2699\ufe0f Automa\u00e7\u00e3o: Pend\u00eancias de F\u00e1brica";
+        var mkdocs_page_input_path = "pcp\\automacoes\\pendencias_fabrica.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../..">
+          <img src="../../../images/logo.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Início</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Para PCP</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../">Introdução</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../dashboards/">Dashboards</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../">Automações</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../gerar_mapa/">Gerar Mapa</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">TrackFlow Documentação Dashboards e Automações</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">⚙️ Automação: Pendências de Fábrica</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="automacao-pendencias-de-fabrica">⚙️ Automação: Pendências de Fábrica</h1>
+<hr />
+<h2 id="informacoes-gerais">Informações Gerais</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Categoria</th>
+<th style="text-align: left;">Detalhe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Nome da Empresa:</strong></td>
+<td style="text-align: left;">Tehokas</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Empresa Destino:</strong></td>
+<td style="text-align: left;">Blutrafos</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Criador:</strong></td>
+<td style="text-align: left;">Eric Cangussu</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Data Elaboração:</strong></td>
+<td style="text-align: left;">03/04/2025</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Departamento Dest.:</strong></td>
+<td style="text-align: left;">PCP e Fábrica</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Tarefa Destino:</strong></td>
+<td style="text-align: left;">Preenchimento e Análise de Pendências Fábrica</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Versão:</strong></td>
+<td style="text-align: left;">1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Prazo Revisão:</strong></td>
+<td style="text-align: left;">03/05/2025</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="introducao">Introdução</h2>
+<p>Esta automação visa apontar e analisar pendências identificadas na fábrica. Por meio dos apontamentos no quadro de pendências, é possível identificar problemas e implementar ações para otimizar a eficiência da produção.</p>
+<hr />
+<h2 id="funcionamento">Funcionamento</h2>
+<ol>
+<li><strong>Envio de relatório Semanal:</strong> Toda segunda-feira pela manhã, é enviado um e-mail a Diretoria com o relatório detalhado das pendências identificadas na fábrica.</li>
+<li><strong>Apontamentos do Quadro de Pendências:</strong> O responsável de cada setor deve abrir o formulário para registrar as pendências identificadas. É necessário informar a data da identificação, a OV (Ordem de Venda/Produção) correspondente, o setor impactado, a situação ocorrida e uma descrição detalhada do problema.</li>
+<li>
+<p><strong>Complemento das Informações:</strong> O <strong>Responsável pelo Indicador</strong> deve complementar os dados através de uma <strong>Sharepoint List</strong> específica. O acesso a esta lista é restrito.</p>
+<ul>
+<li><strong>Nome do Setor:</strong> PCP</li>
+<li><strong>Endereço do Formulário:</strong> <a href="https://solucoestehokas.sharepoint.com/:l:/s/Blutrafos_GestoCompartilhada/FCfdvca-O1xOl4MkwisOC-IBDYL5aTGkWKBTyA7sNSWkfQ?nav=M2U4MWIyM2QtODJjOC00Y2NkLTgyZjctOTA5MDA0Njg2MTNj">Formulário de Pendências</a></li>
+<li><strong>Nome da Sharepoint List:</strong> <code>Plano de Ação - Fábrica</code></li>
+<li><strong>Endereço Sharepoint List:</strong> <a href="https://solucoestehokas.sharepoint.com/sites/Blutrafos_GestoCompartilhada/Lists/Plano%20de%20Ao%20%20Fbrica%20%20Blutrafos/Pendncias%20Abertas.aspx?env=WebViewList">Plano de Ação - Fábrica</a></li>
+<li>
+<p><strong>Detalhes das Colunas:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Nº</th>
+<th style="text-align: left;">Coluna</th>
+<th style="text-align: left;">Como Preencher</th>
+<th style="text-align: left;">Quem Preenche</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"><strong>Data Identificação</strong></td>
+<td style="text-align: left;">Insira a data exata em que a pendência foi originalmente identificada.</td>
+<td style="text-align: left;">Responsável do Setor (via Formulário)</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;"><strong>OV (Ordem Venda/Prod.)</strong></td>
+<td style="text-align: left;">Insira o número da OV/OP principal relacionada à pendência. (<strong>Campo Crucial!</strong>)</td>
+<td style="text-align: left;">Responsável do Setor (via Formulário)</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;"><strong>Cliente</strong></td>
+<td style="text-align: left;">Nome do cliente associado à OV/OP impactada.</td>
+<td style="text-align: left;"><strong>Sistema (Automático)</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;"><strong>Valor</strong></td>
+<td style="text-align: left;">Valor monetário da OV/OP ou impacto estimado da pendência.</td>
+<td style="text-align: left;"><strong>Sistema (Automático)</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;"><strong>Setor Impactado</strong></td>
+<td style="text-align: left;">Selecione na lista o setor da fábrica diretamente afetado.</td>
+<td style="text-align: left;">Responsável pelo Indicador (via Sharepoint)</td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;"><strong>Desvio / Situação</strong></td>
+<td style="text-align: left;">Selecione na lista o tipo de problema ocorrido (ex: Falta de material, Erro de processo).</td>
+<td style="text-align: left;">Responsável pelo Indicador (via Sharepoint)</td>
+</tr>
+<tr>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;"><strong>Descrição</strong></td>
+<td style="text-align: left;">Relato detalhado sobre a pendência (o quê, onde, como). Seja claro e objetivo.</td>
+<td style="text-align: left;">Responsável do Setor (via Formulário)</td>
+</tr>
+<tr>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;"><strong>Detrator</strong></td>
+<td style="text-align: left;">Selecione a categoria principal do problema (ofensor) para análise (ex: Qualidade, Prazo, Custo).</td>
+<td style="text-align: left;">Responsável pelo Indicador (via Sharepoint)</td>
+</tr>
+<tr>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;"><strong>Área Responsável</strong></td>
+<td style="text-align: left;">Selecione a área/departamento responsável por analisar e implementar a solução.</td>
+<td style="text-align: left;">Responsável pelo Indicador (via Sharepoint)</td>
+</tr>
+<tr>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;"><strong>Responsável</strong></td>
+<td style="text-align: left;">Indique o(s) nome(s) da(s) pessoa(s) encarregada(s) de executar o plano de ação.</td>
+<td style="text-align: left;">Responsável pelo Indicador (via Sharepoint)</td>
+</tr>
+<tr>
+<td style="text-align: left;">11</td>
+<td style="text-align: left;"><strong>Ação</strong></td>
+<td style="text-align: left;">Descreva a ação corretiva ou o plano definido para solucionar a pendência.</td>
+<td style="text-align: left;">Responsável pelo Indicador (via Sharepoint)</td>
+</tr>
+<tr>
+<td style="text-align: left;">12</td>
+<td style="text-align: left;"><strong>1ª Data Prevista Solução</strong></td>
+<td style="text-align: left;">Insira a data inicial estimada para a conclusão da ação corretiva.</td>
+<td style="text-align: left;">Responsável pelo Indicador (via Sharepoint)</td>
+</tr>
+<tr>
+<td style="text-align: left;">13</td>
+<td style="text-align: left;"><strong>Data Efetiva Resolução</strong></td>
+<td style="text-align: left;">Insira a data real em que a pendência foi resolvida. Preencher apenas na conclusão.</td>
+<td style="text-align: left;">Responsável pelo Indicador (via Sharepoint)</td>
+</tr>
+<tr>
+<td style="text-align: left;">14</td>
+<td style="text-align: left;"><strong>Causa Raiz Detalhada</strong></td>
+<td style="text-align: left;">Descreva a causa fundamental que originou a pendência, após análise.</td>
+<td style="text-align: left;">Responsável pelo Indicador (via Sharepoint)</td>
+</tr>
+<tr>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;"><strong>Data Mapa</strong></td>
+<td style="text-align: left;">Data de realização/atualização do mapa.</td>
+<td style="text-align: left;"><strong>Sistema (Automático)</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">16</td>
+<td style="text-align: left;"><strong>Mapa</strong></td>
+<td style="text-align: left;">Último mapa do item.</td>
+<td style="text-align: left;"><strong>Sistema (Automático)</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">17</td>
+<td style="text-align: left;"><strong>Situação</strong></td>
+<td style="text-align: left;"><strong>Calculado automaticamente.</strong> Reflete o status atual (Aberta, Concluída, etc.). <strong>Não preencher manualmente.</strong></td>
+<td style="text-align: left;"><strong>Sistema (Automático)</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">18</td>
+<td style="text-align: left;"><strong>Status Entrega</strong></td>
+<td style="text-align: left;"><strong>Calculado automaticamente.</strong> Impacto no status da entrega (No Prazo, Atrasada, etc.). <strong>Não preencher.</strong></td>
+<td style="text-align: left;"><strong>Sistema (Automático)</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">19</td>
+<td style="text-align: left;"><strong>Causa Raiz</strong></td>
+<td style="text-align: left;">Selecione uma categoria mais ampla para a causa raiz identificada.</td>
+<td style="text-align: left;">Responsável pelo Indicador (via Sharepoint)</td>
+</tr>
+<tr>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;"><strong>Raiz</strong></td>
+<td style="text-align: left;">Selecione um nível mais específico ou sub-fator da Causa Raiz (se aplicável).</td>
+<td style="text-align: left;">Responsável pelo Indicador (via Sharepoint)</td>
+</tr>
+<tr>
+<td style="text-align: left;">21</td>
+<td style="text-align: left;"><strong>Prazo Montagem</strong></td>
+<td style="text-align: left;">Insira o prazo (dias/data) da etapa de montagem relacionada, se aplicável.</td>
+<td style="text-align: left;">Responsável pelo Indicador (via Sharepoint)</td>
+</tr>
+<tr>
+<td style="text-align: left;">22</td>
+<td style="text-align: left;"><strong>Data Necessidade PCP</strong></td>
+<td style="text-align: left;"><strong>Calculado automaticamente.</strong> Data limite para resolução sem impactar planejamento. <strong>Não preencher.</strong></td>
+<td style="text-align: left;">Responsável pelo Indicador (via Sharepoint) <em>[Nota: verificar se é sistema ou manual]</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">23</td>
+<td style="text-align: left;"><strong>1ª a 5ª Repactuação</strong></td>
+<td style="text-align: left;">Caso a data prevista não seja cumprida, registre as novas datas acordadas sequencialmente.</td>
+<td style="text-align: left;">Responsável pelo Indicador (via Sharepoint)</td>
+</tr>
+<tr>
+<td style="text-align: left;">24</td>
+<td style="text-align: left;"><strong>Dias Parados</strong></td>
+<td style="text-align: left;">Registre o número total de dias em que a produção/processo ficou parado devido à pendência.</td>
+<td style="text-align: left;">Responsável pelo Indicador (via Sharepoint)</td>
+</tr>
+<tr>
+<td style="text-align: left;">25</td>
+<td style="text-align: left;"><strong>Data Prevista Resolução</strong></td>
+<td style="text-align: left;"><strong>Calculado automaticamente.</strong> Mostra a data de resolução atual (1ª prevista ou última repactuada). <strong>Não preencher.</strong></td>
+<td style="text-align: left;"><strong>Sistema (Automático)</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">26</td>
+<td style="text-align: left;"><strong>Qtde Reprog</strong></td>
+<td style="text-align: left;"><strong>Calculado automaticamente.</strong> Conta quantas vezes a data de solução foi reprogramada. <strong>Não preencher.</strong></td>
+<td style="text-align: left;"><strong>Sistema (Automático)</strong></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Base para Dashboards e Automações:</strong> Os dados salvos nesta lista servem como fonte para a atualização do dashboard "<strong>Pendências de Fábrica</strong>" e para outras automações relacionadas.</p>
+</li>
+<li>
+<p><strong>Fim do processo</strong>: Após a conclusão do processo, os dados salvos na lista são utilizados para atualizar o dashboard "<strong>Pendências de Fábrica</strong>" e para outras automações relacionadas.</p>
+</li>
+</ol>
+<hr />
+<h2 id="beneficios">Benefícios</h2>
+<ul>
+<li><strong>Transparência:</strong> Garante que as pendências estejam visíveis e acessíveis para todas as áreas interessadas.</li>
+<li><strong>Consistência:</strong> Padroniza o processo de registro de desvios no processo produtivo.</li>
+<li><strong>Agilidade:</strong> Otimiza a atualização do dashboard e a execução de outras automações dependentes destes dados.</li>
+<li><strong>Rastreabilidade:</strong> Permite acompanhar o histórico das pendências e gerar indicadores de desempenho.</li>
+</ul>
+<hr />
+<h2 id="responsaveis">Responsáveis</h2>
+<ul>
+<li><strong>Apontamento pela Fábrica:</strong> O <strong>Responsável de Setor</strong> deve inserir as pendências <em>diariamente</em> no formulário designado.</li>
+<li><strong>Complemento das Informações:</strong> O <strong>Responsável pelo Indicador</strong> deve enriquecer os registros na Sharepoint List com dados como causa raiz, plano de ação, prazos, etc.</li>
+<li><strong>Sistema (Automação):</strong> O sistema preenche e atualiza automaticamente diversas colunas, reduzindo a necessidade de preenchimento manual e garantindo a consistência dos dados.</li>
+</ul>
+<hr />
+<h2 id="observacoes-importantes">⚠️ Observações Importantes</h2>
+<ul>
+<li>É <strong>crucial</strong> que o apontador da fábrica preencha o número da <strong>OV</strong> corretamente, pois a automação utiliza este campo para identificar e vincular informações.</li>
+<li>O <strong>Responsável pelo Indicador</strong> deve preencher as informações adicionais com base em seu conhecimento técnico e nas diretrizes estabelecidas, garantindo a qualidade da análise de causa raiz e do plano de ação.</li>
+</ul>
+<hr />
+<h2 id="recursos">Recursos</h2>
+<ul>
+<li>É necessário que a fábrica possua pelo menos um computador disponível para acesso à internet.</li>
+<li>O formulário deve ser acessado pelo navegador de internet.</li>
+<li>O apontador deve ter acesso concedido aos formulários do Sharepoint.</li>
+<li>O responsável pelo indicador deve ter acesso concedido aos formulários do Sharepoint.</li>
+<li>Pelo menos um da empresa ou a empresa de consultoria deve ter uma licença Standarte ou superior da Microsoft 365.</li>
+</ul>
+<hr />
+<h2 id="historico-de-versoes">📜 Histórico de Versões</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Versão</th>
+<th style="text-align: left;">Data</th>
+<th style="text-align: left;">Autor</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1.0</td>
+<td style="text-align: left;">03/04/2025</td>
+<td style="text-align: left;">Eric Cangussu</td>
+<td style="text-align: left;">Versão inicial</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
