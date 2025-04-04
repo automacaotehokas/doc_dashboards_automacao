@@ -34,7 +34,6 @@ extra_css:
 nav:
   - Início: index.md
   - Para PCP:
-    - Introdução: pcp/index.md
     - Dashboards: pcp/dashboards/index.md
     - Automações: pcp/automacoes/index.md
     - Gerar Mapa: pcp/gerar_mapa/index.md
