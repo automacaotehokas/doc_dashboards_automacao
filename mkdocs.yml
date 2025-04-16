@@ -33,6 +33,9 @@ extra_css:
 
 nav:
   - Início: index.md
+  - Para GC:
+    - Rotinas: 
+      - Controle e agendamento de isnpeções: gc/rotinas/index.md
   - Para PCP:
     - Dashboards: pcp/dashboards/index.md
     - Automações: pcp/automacoes/index.md
