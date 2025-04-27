@@ -1,4 +1,6 @@
 site_name: TrackFlow Documentação Dashboards e Automações
+extra_css: 
+  - docs\style\extra.css
 
 theme:
   name: readthedocs
@@ -28,16 +30,27 @@ theme:
       primary: black
       accent: black
 
-extra_css: 
-  - style/extra.css
+
 
 nav:
   - Início: index.md
   - Para GC:
     - Rotinas: 
-      - Controle e agendamento de isnpeções: gc/rotinas/index.md
+      - Controle e agendamento de inspeções: gc/rotinas/index.md
   - Para PCP:
     - Dashboards: pcp/dashboards/index.md
     - Automações: pcp/automacoes/index.md
     - Gerar Mapa: pcp/gerar_mapa/index.md
+  - Para Comercial:
+    - Para Usuários:
+      - Início: comercial/para_usuarios/index.md
+      - Consultas: comercial/para_usuarios/consulta.md
+      - Cadastros: comercial/para_usuarios/cadastro.md
+      - Edição: comercial/para_usuarios/edicao.md
+      - Revisões: 
+        - Visão Geral: comercial/para_usuarios/revisao.md 
+        - Proposta Automatizada para Transformadores: comercial/para_usuarios/proposta_trafo.md
+        - Proposta Automatizada para Solar: comercial/para_usuarios/proposta_solar.md
+      - Follows: comercial/para_usuarios/follow.md
+    - Para Desenvolvedores: comercial/para_desenvolvedores/index.md
 
