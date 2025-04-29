@@ -1,142 +1,207 @@
 # Proposta Automatizada para Solar
+Esta seção descreve como criar uma proposta automatizada para sistemas fotovoltaicos. Esta divisão de equipamentos se refere aos SKIDs (subestações compactas para conexão à rede) e QGBTs (quadros de distribuição de baixa tensão), além dos componentes associados como inversores, módulos solares e estruturas de montagem.
 
-Esta seção descreve como criar uma proposta automatizada para sistemas de energia solar (UFV's para GD ou GC). Estas propostas podem incluir equipamentos fornecidos pela Blutrafos e/ou itens de revenda de parceiros (formando um KIT).
 
 ## Acessando a tela de criação de proposta
 
-O processo para iniciar a criação de uma proposta automatizada solar é o mesmo das propostas de transformadores:
-
-1.  Identifique a linha correspondente na tela principal de propostas.
-2.  Clique na linha para abrir a tela de ações.
-3.  Selecione a opção "Revisão".
-4.  Na tela de listagem de revisões, selecione "Configurar Proposta" (se for a primeira revisão automatizada) ou clique no ícone "Revisar no aplicativo" em uma revisão existente.
-
+Identifique a linha correspondente na tela principal de propostas, clique na linha e selecione na tela de ações a opção de "Revisão". Abrirá a listagem de revisões e selecione a opção "Configurar Proposta" se não possuir nenhuma revisão autmatizada. Caso possua clique no ícone na linha de revisão "Revisar no aplicativo".
 ![Tela Principal](img/tela_principal.png)
 ![Tela de Ações](img/tela_acao.png)
-![Tela de Listagem/Criação de Revisões](img/tela_listagem_revisoes.png) <!-- Sugestão: Usar a imagem da tela de revisões -->
+
+## Navegação
+Ao abrir a tela de revisão, será exibida a tela de navegação, conforme a imagem abaixo. Abaixo segue a descrição das abas:
+
+1.Home: Tela Inicial, apenas para visualização.
+
+2.Itens: Principal tela do aplicativo, onde será configurado os itens da proposta. Bem como margens como margem de lucro, 
+comissão, ICMS, etc.
+
+3.Pagamento-Entrega-Desvios: Tela de configuração de pagamento, entrega e desvios.
+
+4.Resumo:  Tela de resumo da proposta, onde é exibido os valores totais da proposta e os itens da proposta. Possui o botão de "Gerar Documentos" para gerar o WORD da proposta, PDF de extrato e salvar a proposta no banco de dados.
+
+![Tela de Navegação](img/tela_navegacao_solar.png)
 
 ## Principais Campos e Parâmetros:
 
+
 ### Campos de Percentuais e Margens:
 
-![Sidebar de Impostos e Margens](img/nav_impostos_proposta_solar.png) <!-- **Sugestão:** Usar uma imagem específica se a sidebar for diferente para solar -->
+#### Configuração dos Percentuais
 
-Estes campos definem as bases para os cálculos de valores e são comuns a diferentes tipos de propostas.
 
-| Campo                         | Descrição                                                                                                                               |
-| :---------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
-| Lucro                         | Percentual do lucro desejado sobre o custo (ex: 4,5%).                                                                                  |
-| ICMS                          | Percentual do ICMS aplicável (ex: 12%).                                                                                                 |
-| Comissão                      | Percentual da comissão do agente (ex: 10%).                                                                                             |
-| Tipo de Frete                 | Seleção: "CIF" (Custo, Seguro e Frete inclusos) ou "FOB" (Livre a Bordo - frete por conta do cliente).                                    |
-| Local de Frete                | Seleção do local de destino ou origem para cálculo do frete.                                                                            |
-| Frete                         | Percentual ou valor do frete (ex: 10%).                                                                                                 |
-| Cliente Contribuinte do ICMS? | Seleção: "Sim" ou "Não". Se "Não", habilita os campos "DIFAL" (Diferencial de Alíquota) e "Fundo de Pobreza" para preenchimento (ex: 10%). |
+Estes campos são utilizados para definir os percentuais e margens para calculos de valores.
 
----
+| Campo | Descrição |
+|-------|-----------|
+|Lucro| Percentual do lucro da proposta no formato ex 4,5%|
+|ICMS| Percentual do ICMS no formato ex 12%|
+|Comissão | Comissão do agente no formato ex 10%|
+|Tipo de Frete| Seleção, pode ser "CIF" ou "FOB"|
+|Local de Frete| Seleção, escolha entre a listagem|
+|Frete| Percentual do frete no formato ex 10%|
+|Cliente Contribuinte do ICMS?| Seleção, pode ser "Sim" ou "Não", caso for "Não" abrirá os campos "DIFAL" e "Fundo de Pobreza" que também deverão ser preenchidos no formato ex 10%|
+|Valor do Dolar| Valor do dolar no formato ex 5,00|
 
-### Configuração dos Itens Solares:
 
-Diferente dos transformadores, a proposta solar é montada adicionando componentes específicos (Inversores, Módulos, etc.). A combinação desses itens definirá o escopo e valor total.
+#### Campos de Configurações da Usina:
+| Campo | Descrição |
+|-------|-----------|
+|Quantas usinas terá a proposta?| Quantidade de usinas que serão adicionadas. Através deste campo que será adicionado ou removido usinas. |
+|Nome da Usina| Nome da usina, campo de livre. Campo dentro de cada usina. |
+|Quantos Itens terá a Usina?| Quantidade de itens que serão adicionados. Através deste campo que será adicionado ou removido itens. |
+|Selecione o tipo de produto| Seleção, pode ser "SKID","QGBT","Inversor","Módulo","Logger","Estrutura","Cabine","Cabos"|
 
-![Tela de Configuração de Itens Solares](img/campos_proposta_solar.png) <!-- **Sugestão:** Adicionar imagem da tela de configuração solar -->
+### Campos de Itens:
 
-#### 1. Inversores
+#### SKID:
 
-| Campo      | Descrição                                    |
-| :--------- | :------------------------------------------- |
-| Marca      | Seleção ou digitação da marca do inversor.   |
-| Potência   | Potência nominal do inversor (ex: kW).       |
-| Valor      | Custo ou valor de venda unitário.            |
-| Quantidade | Número de inversores deste tipo a incluir. |
+| Campo | Descrição |
+|-------|-----------|
+|Quantidade| Quantidade de SKID que serão adicionados. Através deste campo que será multiplicado pelo valor do SKID|
+|Potência (kVA)| Potência do SKID, campo de seleção variando de 500 a 3000. Atráves deste campo que será associado com o transformador|
+|Transformador Auxiliar| Seleção, caso estiver como "Nenhum" não será adicionado o transformador auxiliar. Caso houver, selecione a potência dentro da listagem|
+|Tensão MT (kV)| Tensão do transformador, campo de seleção 15 ou 36. Atráves deste campo que será associado com o transformador|
+|Configuração MT| Seleção, pode ser PR (Para-raio), CH (Chave seccionadora) ou NA (Não aplicável)|
+|Configuração BT| Seleção, pode ser PR (Para-raio) ou CH (Chave seccionadora)|
+|Tensão na BT| Seleção, pode ser 600 ou 800V|
+|Fator K| Seleção, varia entre 1 a 13, causa impacto no valor do transformador|
+|Descrição do valor adicional| Campo de livre. Campo que não contenha nos produtos|
+|Valor adicional| Campo de livre. Campo que não contenha nos produtos|
 
-#### 2. Módulos Fotovoltaicos
+#### QGBT:
 
-| Campo      | Descrição                                    |
-| :--------- | :------------------------------------------- |
-| Marca      | Seleção ou digitação da marca do módulo.     |
-| Potência   | Potência de pico do módulo (ex: Wp).         |
-| Valor      | Custo ou valor de venda unitário.            |
-| Quantidade | Número de módulos deste tipo a incluir.    |
+| Campo | Descrição |
+|-------|-----------|
+|Quantidade| Quantidade de QGBT que serão adicionados. Através deste campo que será multiplicado pelo valor do QGBT|
+|Potência (kVA)| Potência do QGBT, campo de seleção variando de 100 a 3000.|
+|Tensão BT| Seleção, pode ser 600 ou 800V|
+|Configuração BT| Seleção, pode ser PR (Para-raio) ou CH (Chave seccionadora)|
+|Transformador Auxiliar| Seleção, caso estiver como "Nenhum" não será adicionado o transformador auxiliar. Caso houver, selecione a potência dentro da listagem|
 
-#### 3. Estruturas de Montagem
 
-| Campo   | Descrição                                                                 |
-| :------ | :------------------------------------------------------------------------ |
-| Marca   | Seleção ou digitação da marca da estrutura.                               |
-| Modelo  | Tipo da estrutura (ex: Solo, Telhado Cerâmico, Telhado Metálico, Laje). |
-| Valor   | Custo ou valor de venda total para a estrutura necessária.                |
+#### Transformador Isolado a Seco:
 
-#### 4. Cabos
+| Campo | Descrição |
+|-------|-----------|
+|Quantidade| Quantidade de transformadores que serão adicionados. Através deste campo que será multiplicado pelo valor do transformador|
+|Descrição| Seleção, campo concatenado que já contém a potência, classe de tensão e perdas.|
+|Fator K| Seleção, varia entre 1 a 13, causa impacto no valor do transformador|
 
-| Campo | Descrição                                                              |
-| :---- | :--------------------------------------------------------------------- |
-| Marca | Seleção ou digitação da marca/tipo dos cabos (ex: CC, CA).             |
-| Valor | Custo ou valor de venda total estimado para os cabos do projeto.       |
 
-#### 5. Cabine / Subestação (Opcional - Geralmente para GC)
+#### Inversor:
 
-| Campo         | Descrição                                                              |
-| :------------ | :--------------------------------------------------------------------- |
-| Concessionária| Nome da concessionária de energia (relevante para padrões de conexão). |
-| Potência      | Potência da cabine/subestação (ex: kVA).                               |
-| Valor         | Custo ou valor de venda da cabine/subestação.                          |
+| Campo | Descrição |
+|-------|-----------|
+|Quantidade| Quantidade de inversores que serão adicionados. Através deste campo que será multiplicado pelo valor do inversor|
+|Fabricante| Seleção, empresa que fabrica o inversor|
+|Modelo| Seleção, modelo do inversor|
+|Fator de importação| Campo livre,  vem pre-setado com o valor recomendado, mas pode ser ajustado para impactar no preço.|
+|Valor Adicional| Campo de livre. Campo que não contenha nos produtos|
 
-#### 6. Itens Blutrafos (Ex: Quadros, Eletrocentro Solar - se aplicável)
+#### Logger:
 
-*   *(Esta seção precisaria ser detalhada se houver itens específicos fabricados pela Blutrafos que entram na proposta solar automatizada, similar aos transformadores BT/MT, com seus próprios campos e acessórios)*
+| Campo | Descrição |
+|-------|-----------|
+|Quantidade| Quantidade de loggers que serão adicionados. Através deste campo que será multiplicado pelo valor do logger|
+|Fabricante| Seleção, empresa que fabrica o logger.|
+|Modelo| Seleção, modelo do logger|
+|Fator de importação| Campo livre,  vem pre-setado com o valor recomendado, mas pode ser ajustado para impactar no preço.|
+|Valor Adicional| Campo de livre. Campo que não contenha nos produtos|
 
----
+#### Módulo:
 
-## Rotina para Configurar Itens na Proposta Solar Automatizada:
+| Campo | Descrição |
+|-------|-----------|
+|Quantidade| Quantidade de módulos que serão adicionados. Através deste campo que será multiplicado pelo valor do módulo|
+|Modelo| Seleção, modelo do módulo (se refere a potência do módulo)|
+|Tipo| Campo livre para adicionar especificações do módulo|
+|Marca| Seleção, empresa que fabrica o módulo|
+|Valor adicional| Campo de livre. Campo que não contenha nos produtos|
+|Frete adicional| Campo de livre. Campo que não contenha nos produtos|
 
-1.  **Configure Percentuais e Margens:** Ajuste os valores na aba lateral conforme necessário.
-2.  **Verifique Cabeçalho:** Confirme se o número da proposta e o cliente no topo da tela estão corretos.
-3.  **Adicione Componentes:** Navegue pelas abas ou seções correspondentes a cada tipo de item (Inversores, Módulos, Estruturas, etc.).
-    *   Preencha os campos específicos para cada componente (Marca, Potência, Quantidade, Valor).
-    *   Clique em "Adicionar Item" (ou similar) para cada componente que fará parte da proposta.
-4.  **Repita:** Adicione todos os componentes necessários para formar o sistema solar ofertado. O sistema calculará os totais (Escopo Solar, Valor Solar, etc.) com base nos itens adicionados.
 
-!!! info "Tipo Solar (KIT vs Skid)"
-    O sistema pode classificar automaticamente a proposta como **KIT** se ela incluir itens marcados como revenda/parceiros, ou como **Skid** se todos os componentes principais forem fornecidos diretamente pela Blutrafos (depende da configuração dos itens no sistema).
+#### Estrutura:
+| Campo | Descrição |
+|-------|-----------|
+|Quantidade| Quantidade de estruturas que serão adicionadas. Através deste campo que será multiplicado pelo valor da estrutura|
+|Tipo| Seleção, pode ser "Fixa" ou "Tracker"|
+|Modelo| Seleção, modelo da estrutura. Pode ser "Simples","Média" ou "Robusta"|
+|Marca| Seleção, empresa que fabrica a estrutura|
+|Potência da Usina em Wp| Campo livre, digite qual é a potência da usina. Este campo só é habilitado caso a proposta não contenha módulos, caso contenha o sistema calcula automaticamente a potência da usina|
 
----
+
+### Cabos:
+
+| Campo | Descrição |
+|-------|-----------|
+|Quantidade| Quantidade de cabos que serão adicionados. Através deste campo que será multiplicado pelo valor do cabo|
+|Metragem| Metragem do cabo|
+|Segmento de Cabo| Seleção, pode ser "MT" , "BT" "Solar" |
+|Modelo| Seleção, modelo do cabo|
+|Marca| Seleção, empresa que fabrica o cabo|
+|Valor do metro| Campo livre, pre-setado com o valor recomendado, mas pode ser ajustado para impactar no preço.|
+
+
+### Cabine:
+
+| Campo | Descrição |
+|-------|-----------|
+|Quantidade| Quantidade de cabines que serão adicionadas. Através deste campo que será multiplicado pelo valor da cabine|
+|Classe de tensão| Seleção, pode ser 15 ou 36|
+|Número de Medições| Seleção, pode ser 1, 2 ou 3|
+|Fornecedor| Campo de seleção, pode ser Blutrafos ou Outros|
+
+
+
+## Rotina para Configurar Itens na Proposta Automatizada:
+
+1.Na listagem de proposta identifique a linha desejada, clique na linha e aperte em "Revisões". Caso não tenha revisão aperte no botão "Configurar Proposta".  
+
+2.Na aba do aplicativo utilize a navegação lateral e vá para "Itens".
+
+3.Configure os percentuais e margens.
+
+4.Digite o número de usinas. Para apagar uma usina diminua o valor.
+
+5.Digite o nome da usina, pode ser deixado em branco. 
+
+6.Selecione quantos itens terá a usina. Para apagar um item diminua o valor.
+
+7.Selecione qual tipo de produto para cada campo que está sendo adicionado.
+
+8.Para cada aba expansível de itens, preencha os campos de acordo com o produto. Descrição de cada campo detalhada no tópico anterior.
+
+## Cálculo:
+
+
 
 ## Configuração de Prazos de Entrega e Eventos de Pagamento
 
-Após adicionar todos os itens, configure as condições comerciais na aba "Entrega/Pagamento/Desvios" (ou similar).
+Estes são as configurações finais da proposta. Após configurar os itens navegue pelo menu lateral para "Entrega/Pagamento/Desvios" e configure os prazos de entrega e os eventos de pagamento.
 
-![Aba de Prazos e Pagamentos Solar](img/prazos_eventos_proposta_solar.png) <!-- **Sugestão:** Usar imagem específica se a tela for diferente -->
+## Prazos Gerais
 
-### Parâmetros:
+Possui um campo para configurar o prazo para o cliente aprovar o desenho, campo para a engenharia entregar o desenho e um campo para o prazo de fabricação do equipamento. Possui um campo de livre digitação para configurar como desejar, caso queira incluir mais uma linha clique em "Adicionar Prazo".
 
-#### Prazos Gerais
+## Eventos
 
-*   **Prazo Aprovação Desenho (Cliente):** Dias que o cliente tem para aprovar.
-*   **Prazo Entrega Desenho (Engenharia):** Dias para a engenharia fornecer.
-*   **Prazo Fabricação/Entrega:** Prazo total para disponibilizar os equipamentos.
+São condições únicas para cada  tipo de equipamentos. Possui 3 campos: Percentual a pagar, diaas para pagamento e evento de pagamento relacionado. 
+Os eventos podem ser adicionados ou excluidos, porém é verificado se os percentuais são iguais a 100%.
 
-#### Eventos de Pagamento
 
-*   Adicione ou remova marcos de pagamento.
-*   Para cada marco, defina:
-    *   **Percentual:** % do valor total a ser pago.
-    *   **Dias:** Prazo em dias para o pagamento.
-    *   **Evento:** Condição que dispara o pagamento (ex: Assinatura Contrato, Entrega Material, Conexão).
-*   **Validação:** O sistema verificará se a soma dos percentuais é igual a 100%.
+## Desvios
 
-#### Desvios
+É um campo livre para informar qualquer desvio que está sendo considerado na proposta.
 
-*   Campo livre para registrar quaisquer condições ou itens não padrão considerados na proposta.
-
----
 
 ## Finalização da Proposta
 
-1.  **Navegue até Resumo:** Vá para a aba "Resumo" (ou similar).
-2.  **Revise:** Confira o resumo dos itens, valores totais, escopo (potência total calculada) e condições.
-3.  **Adicione Comentários:** Insira observações gerais sobre a proposta, se necessário.
-4.  **Confirme:** Clique em "Confirmar" (ou "Gerar Proposta").
-5.  **Download:** O sistema gerará o documento da proposta (ex: WORD). Faça o download e salve-o no local apropriado.
+Navegue até a aba "Resumo". Nela apareção o resumo dos itens selecionados e um campo para comentário geral da proposta. Após isso clique em "Gerar Documentos" o sistema irá gerar a proposta em WORD e a proposta em PDF (Extrato de resumo). Clique para fazer o download do arquivo e salve na pasta da rede de sua empresa.
 
-![Aba de Finalização Solar](img/finalizacao_proposta_solar.png) <!-- **Sugestão:** Usar imagem específica se a tela for diferente -->
+![Aba de Itens](img/finalizacao_solar.png)
+
+
+
+
+

@@ -23,6 +23,7 @@ Nesta secção iremos abordar em como inserir novas propostas, clientes e contat
 |Orçamentista| Colaborador que está responsável pela elaboração e envio da proposta. |
 
 ### Tela de Nova Proposta:
+
 ![Tela de Nova Proposta](img\tela_nova_proposta.png)
 
 
@@ -55,7 +56,7 @@ Para iniciar a rotina clique no botão "Nova Proposta" no canto superior direito
 
 >Preencha o campo "Obra" com o nome da obra que a proposta está relacionada, se houver.
 
->Clique no campo de "Cliente e Contato" e selecione o cliente e contato que a proposta está relacionada. Se não houver nenhum cliente ou contato cadastrado, clique no botão "Novo Cliente" ou "Novo Contato" para cadastrar. Mais detalhes [aqui](#Clientes).
+>Clique no campo de "Cliente e Contato" e selecione o cliente e contato que a proposta está relacionada. Se não houver nenhum cliente ou contato cadastrado, clique no botão "Novo Cliente" ou "Novo Contato" para cadastrar. Mais detalhes [aqui](#cliente).
 
 >Preencha o campo "Agente" com o nome do agente que está realizando a proposta.
 
