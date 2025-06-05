@@ -1,3 +1,17 @@
+# Tabela-resumo
+| Categoria             | Detalhe                                      |
+| :-------------------- | :------------------------------------------- |
+| **Nome da Empresa:** | Tehokas                                      |
+| **Empresa Destino:** | Blutrafos                                    |
+| **Criador:** | Eduardo Poli                               |
+| **Data Elaboração:** | 17/04/2025                                   |
+| **Departamento Dest.:**| PCP                          |
+| **Tarefa Destino:** | Apontamento de motivos de reprogamação                      |
+| **Versão:** | 1.0                                          |
+| **Prazo Revisão:** | 17/05/2025                                   |
+
+---
+
 # Aplicativo de Justificativas
 
 Bem-vindo à documentação do Aplicativo de Justificativas do TrackFlow. Esta ferramenta foi desenvolvida para registrar e acompanhar as justificativas referentes aos itens não concluídos nos mapas de produção anteriores.
