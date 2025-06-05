@@ -43,17 +43,14 @@ nav:
   - Início: index.md
   - Para GC:
     - Rotinas: 
-      - Controle e agendamento de isnpeções: gc/rotinas/index.md
-    - Consulta de dados: 
-       - Tabela resumo:  gc/resumo/index.md
-
       - Controle e agendamento de inspeções: gc/rotinas/index.md
+    - Consulta de dados: 
+      - Tabela resumo: gc/resumo/index.md
   - Para PCP:
     - Dashboards: pcp/dashboards/index.md
     - Automações: pcp/automacoes/index.md
     - Gerar Mapa: pcp/gerar_mapa/index.md
     - Justificativas: pcp/justificativas/index.md
-
   - Para Comercial:
     - Para Usuários:
       - Início: comercial/para_usuarios/index.md

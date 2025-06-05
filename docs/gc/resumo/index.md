@@ -1,15 +1,14 @@
-
 # Tabela-resumo
 | Categoria             | Detalhe                                      |
 | :-------------------- | :------------------------------------------- |
 | **Nome da Empresa:** | Tehokas                                      |
 | **Empresa Destino:** | Blutrafos                                    |
 | **Criador:** | Eduardo Poli                               |
-| **Data Elaboração:** | 17/04/2025                                   |
+| **Data Elaboração:** | 05/06/2025                                   |
 | **Departamento Dest.:**| GC , PCP , Engenharia e Financeiro                           |
 | **Tarefa Destino:** | Consulta de dados                       |
 | **Versão:** | 1.0                                          |
-| **Prazo Revisão:** | 17/05/2025                                   |
+| **Prazo Revisão:** | 05/07/2025                                   |
 
 ---
 
@@ -29,6 +28,7 @@ Bem-vindo à documentação da Tabela-resumo do TrackFlow. Esta ferramenta foi d
 * [Sistema de Comentários](#sistema-de-comentários)
 * [Recursos de Filtragem](#recursos-de-filtragem)
 * [Guia de Utilização](#guia-de-utilização)
+* [Reunião](#reunião)
 
 ## Objetivos e Benefícios
 
@@ -349,3 +349,107 @@ A Tabela-resumo oferece recursos avançados de filtragem em todas as colunas.
 1. Aplique os filtros desejados para selecionar os dados relevantes
 2. Clique no botão "Exportar Excel"
 3. O arquivo Excel será gerado contendo apenas os dados visíveis na tabela
+
+## Reunião
+
+A visão de reunião é uma funcionalidade desenvolvida para facilitar o alinhamento entre os gestores de contrato e as divisões da engenharia. Este módulo permite um gerenciamento dos projetos durante as reuniões de alinhamento de projetos.
+
+### Objetivo
+
+Facilitar a comunicação e o alinhamento entre a Gestão de Contratos e as diferentes divisões da Engenharia, garantindo que todas as etapas dos projetos sejam adequadamente coordenadas e documentadas.
+
+### Divisões da Engenharia
+
+Cada divisão possui seu próprio parâmetro de filtro específico:
+
+* **BxBx**
+* **Seco**
+* **Óleo**
+* **Eng Ele** (Engenharia Sistemas)
+* **Eng Mec** (Engenharia Mecânica)
+* **Service**
+
+### Campos de Alinhamento
+
+O sistema de reunião utiliza cinco campos principais para documentar os alinhamentos:
+
+#### Campos Obrigatórios
+
+* **Etapa**: Definição da etapa atual ou próxima do projeto. Utilizada como parâmetro para mudar a data prevista da etapa.
+* **Setor da Engenharia**: Identificação da divisão responsável pela etapa.
+* **Dt Alinhada**: Data acordada para conclusão da etapa ou data prevista para realizar alguma ação.
+
+#### Campos Opcionais
+
+* **Comentário**: Observações adicionais sobre o alinhamento
+* **Apontar Data**: Funcionalidade para modificar a data da etapa
+
+### Regras de Salvamento
+
+**Campos obrigatórios em conjunto**:
+>* Os três campos obrigatórios (Etapa, Setor da Engenharia e Dt Alinhada) devem ser preenchidos simultaneamente
+>* O salvamento só ocorre quando os três campos estão completos
+>* Se qualquer um dos três campos estiver vazio, nenhum dado será salvo
+
+**Campo Comentário**:
+>* Pode ser salvo independentemente dos campos obrigatórios
+>* Não impede o salvamento dos demais campos
+
+**Campo Apontar Data**:
+>* Só é modificada a data prevista da etapa se a etapa atual é igual a etapa apontada e o campo apontar data estar marcado.
+>* Funciona como ferramenta de ajuste de cronograma.
+
+### Permissões de Acesso
+
+**Usuários autorizados para salvamento**:
+
+* Gestores de Contrato
+* Programador PCP
+
+**Restrições**:
+>* Outros usuários podem visualizar os dados, mas não podem realizar alterações
+>* Sistema verifica automaticamente as permissões antes de permitir salvamento
+
+### Comunicação e Notificações
+
+#### Compartilhamento no Teams
+
+**Processo**:
+>* Ao final da reunião, o gestor de contrato pode enviar um resumo do que foi alinhado
+>* O envio é feito diretamente para o grupo do Teams correspondente à divisão
+>* Todos os participantes da reunião recebem as informações simultaneamente
+>* Para enviar este resumo vá para a aba "Comentários" no ribbon e clique em "Enviar (nome da divisão) para Teams." 
+
+#### Automação de Atrasos
+
+**Funcionamento**:
+>* No dia seguinte à reunião, é gerada uma listagem automática
+>* A listagem identifica projetos alinhados em atraso para cada divisão da engenharia
+>* Cada divisão recebe apenas os atrasos relacionados aos seus projetos
+
+### Fluxo de Trabalho
+
+1. **Preparação**: Gestor de contrato acessa a visão de reunião e filtra pela divisão específica
+2. **Alinhamento**: Durante a reunião, os campos são preenchidos para cada projeto discutido
+3. **Salvamento**: Sistema valida e salva apenas registros com campos obrigatórios completos
+4. **Comunicação**: Gestor envia resumo via Teams para todos os participantes
+5. **Monitoramento**: Sistema gera relatório automático de atrasos no dia seguinte
+
+```mermaid
+flowchart TD
+    A[Gestor de Contrato acessa a visão de reunião] --> B[Filtra pela divisão específica]
+    B --> C[Durante a reunião:<br/>Preenchimento dos campos<br/>para cada projeto]
+    C --> D{Campos obrigatórios<br/>completos?}
+    D -->|Sim| E[Sistema valida e salva<br/>os registros]
+    D -->|Não| F[Dados não são salvos]
+    F --> C
+    E --> G[Gestor envia resumo<br/>via Teams para<br/>participantes da reunião]
+    G --> H[Fim da reunião]
+    H --> I[Dia seguinte:<br/>Sistema gera automaticamente<br/>relatório de atrasos]
+    I --> J[Relatório enviado para<br/>cada divisão da engenharia]
+
+  style A fill:#e1f5fe
+  style G fill:#f3e5f5
+  style I fill:#fff3e0
+  style J fill:#e8f5e8
+```
