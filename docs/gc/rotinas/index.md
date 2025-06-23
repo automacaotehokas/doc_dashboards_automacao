@@ -18,21 +18,6 @@ Este documento serve como guia central para entender, executar e gerenciar esta 
 
 Utilize o índice abaixo para navegar rapidamente para a seção desejada neste documento.
 
----
-## Índice
-
-### 1. Introdução
-[1. Introdução](#1-introdução)
-
-### 2. Pré-requisitos
-[2. Pré-requisitos](#2-pré-requisitos)
-
-### 3. Procedimento de execução
-[3. Procedimento de execução](#3-procedimento-de-execução)
-
-### 4. Frequência e saídas
-[4. Frequência e saídas](#4-frequência-e-saídas)
-
 
 ---
 
