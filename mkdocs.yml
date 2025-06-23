@@ -47,7 +47,9 @@ nav:
   - Para PCP:
     - Dashboards: pcp/dashboards/index.md
     - Automações: pcp/automacoes/index.md
+    - Análise e controle MAPA: pcp/reuniao_mapa/index.md
     - Gerar Mapa: pcp/gerar_mapa/index.md
+
   - Para Comercial:
     - Para Usuários:
       - Início: comercial/para_usuarios/index.md
@@ -63,3 +65,6 @@ nav:
     - Início: lab/rotinas/index.md
     - Controle de Inspeções: lab/rotinas/inspecao.md
     - Apontamento de Data de Fabricação: lab/rotinas/apontamento_dt_fab.md
+  - Para Qualidade:
+    - Início: qualidade/rotinas/index.md
+    - Controle de OS: qualidade/rotinas/controle_os.md
